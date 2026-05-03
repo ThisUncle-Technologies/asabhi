@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | ASABHI COMPANY LIMITED</title>
+  <meta name="description" content="Learn about ASABHI Company Limited — our story, mission, values, and the team behind Tanzania's trusted supply company.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages/about.css">
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__wordmark">
+      <div class="loader__logo">ASABHI</div>
+      <div class="loader__tagline">Company Limited</div>
+    </div>
+    <div class="loader__bar"><div class="loader__progress" id="loaderProgress"></div></div>
+  </div>
+
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">
+        <strong>ASABHI</strong>
+        <small>Company Limited</small>
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Home</a></li>
+        <li><a href="about.html" class="nav__link active">About</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="products.html" class="nav__link">Products</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary">Get a Quote</a>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="nav__mobile" id="navMobile">
+    <ul class="nav__mobile-links">
+      <li><a href="../index.html" class="nav__mobile-link">Home</a></li>
+      <li><a href="about.html" class="nav__mobile-link active">About</a></li>
+      <li><a href="services.html" class="nav__mobile-link">Services</a></li>
+      <li><a href="products.html" class="nav__mobile-link">Products</a></li>
+      <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
+    </ul>
+    <div class="nav__mobile-contact">
+      <a href="tel:+255787844040"><i class="ri-phone-line"></i> +255 787 844 040</a>
+      <a href="https://wa.me/255787844040" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp Us</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container page-hero__content">
+        <div class="page-hero__breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="ri-arrow-right-s-line"></i>
+          <span>About Us</span>
+        </div>
+        <h1 class="page-hero__title">Our Story</h1>
+        <p class="page-hero__subtitle">From humble beginnings to one of Tanzania's trusted supply companies — built on integrity and a commitment to quality.</p>
+      </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="about-story section">
+      <div class="container">
+        <div class="story__grid">
+          <div class="story__text fade-right">
+            <span class="section-tag">Established 2012</span>
+            <h2 class="section-title">The ASABHI <span>Story</span></h2>
+            <p style="margin-bottom:1.2rem;">ASABHI Company Limited was founded in 2012 by Ibrahim Matayi with a simple but powerful idea: Tanzanian businesses deserved a supply partner they could actually rely on. Too often, companies were losing time and money chasing unreliable suppliers and inconsistent quality.</p>
+            <p style="margin-bottom:1.2rem;">Starting with a small warehouse in Dar es Salaam, we built our catalogue one client relationship at a time. Today, ASABHI serves over 200 clients across Tanzania — from SMEs to multinationals and government institutions.</p>
+            <p>Our growth has been organic, driven entirely by referrals and long-term partnerships. Every client that stays with us is a testament to the promise we made in 2012: quality supplies, every time, on time.</p>
+            <div class="gold-line"></div>
+          </div>
+          <div class="story__image-col fade-left">
+            <img
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+              alt="ASABHI office"
+              class="story__img"
+            >
+            <img
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80"
+              alt="ASABHI team meeting"
+              class="story__img story__img--offset"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <section class="mvv section section--cream">
+      <div class="container">
+        <div class="mvv__header" style="text-align:center;margin-bottom:4rem;">
+          <span class="section-tag">What Drives Us</span>
+          <h2 class="section-title">Mission, Vision &amp; <span>Values</span></h2>
+        </div>
+        <div class="mvv__grid stagger-children">
+          <div class="mvv__card">
+            <div class="mvv__icon"><i class="ri-focus-3-line"></i></div>
+            <h3>Our Mission</h3>
+            <p>To provide reliable, high-quality supply and procurement solutions that empower Tanzanian businesses to operate efficiently and competitively.</p>
+          </div>
+          <div class="mvv__card mvv__card--accent">
+            <div class="mvv__icon"><i class="ri-eye-line"></i></div>
+            <h3>Our Vision</h3>
+            <p>To be East Africa's most trusted general supply company — synonymous with quality, reliability, and genuine business partnership.</p>
+          </div>
+          <div class="mvv__card">
+            <div class="mvv__icon"><i class="ri-shield-star-line"></i></div>
+            <h3>Our Values</h3>
+            <ul class="mvv__list">
+              <li><i class="ri-check-line"></i> Integrity in every transaction</li>
+              <li><i class="ri-check-line"></i> Quality without compromise</li>
+              <li><i class="ri-check-line"></i> Clients first, always</li>
+              <li><i class="ri-check-line"></i> Timely delivery, every time</li>
+              <li><i class="ri-check-line"></i> Continuous improvement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team section">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:4rem;">
+          <span class="section-tag">The People Behind ASABHI</span>
+          <h2 class="section-title">Meet Our <span>Leadership</span></h2>
+        </div>
+        <div class="team__grid stagger-children">
+          <div class="team__card">
+            <div class="team__img-wrap">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Ibrahim Matayi" class="team__img">
+            </div>
+            <div class="team__info">
+              <h4 class="team__name">Ibrahim Matayi</h4>
+              <span class="team__role">Founder &amp; Managing Director</span>
+              <p class="team__bio">With over 15 years in procurement and trade, Ibrahim founded ASABHI to close the gap between quality supply and Tanzanian business needs.</p>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__img-wrap">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Fatuma Salim" class="team__img">
+            </div>
+            <div class="team__info">
+              <h4 class="team__name">Fatuma Salim</h4>
+              <span class="team__role">Head of Operations</span>
+              <p class="team__bio">Fatuma oversees all logistics, warehousing and delivery operations, ensuring every client receives their orders accurately and on time.</p>
+            </div>
+          </div>
+          <div class="team__card">
+            <div class="team__img-wrap">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Emmanuel Kimaro" class="team__img">
+            </div>
+            <div class="team__info">
+              <h4 class="team__name">Emmanuel Kimaro</h4>
+              <span class="team__role">Procurement Manager</span>
+              <p class="team__bio">Emmanuel manages our supplier network, negotiates contracts, and ensures the products we stock meet ASABHI's strict quality standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__content">
+        <span class="cta-banner__tag">Start the Conversation</span>
+        <h2 class="cta-banner__title">Ready to Partner with ASABHI?</h2>
+        <p class="cta-banner__desc">Get in touch with our team and let's build a supply relationship built on trust and quality.</p>
+        <div class="cta-banner__actions">
+          <a href="contact.html" class="btn btn--primary"><i class="ri-mail-send-line"></i> Contact Us</a>
+          <a href="https://wa.me/255787844040" target="_blank" class="btn btn--outline"><i class="ri-whatsapp-line"></i> WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <strong>ASABHI</strong>
+          <small>Company Limited</small>
+          <p>Your trusted partner for quality supplies and procurement solutions across Tanzania — since 2012.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social"><i class="ri-linkedin-box-line"></i></a>
+            <a href="#" class="footer__social"><i class="ri-facebook-line"></i></a>
+            <a href="https://wa.me/255787844040" class="footer__social" target="_blank"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Quick Links</h5>
+          <ul class="footer__links">
+            <li><a href="../index.html" class="footer__link">Home</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="products.html" class="footer__link">Products</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul class="footer__links">
+            <li><a href="services.html" class="footer__link">Procurement</a></li>
+            <li><a href="services.html" class="footer__link">Distribution</a></li>
+            <li><a href="services.html" class="footer__link">Supply Chain</a></li>
+            <li><a href="services.html" class="footer__link">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact Us</h5>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <i class="ri-map-pin-2-line"></i>
+              <span>Dar es Salaam, Tanzania</span>
+            </div>
+            <div class="footer__contact-item">
+              <i class="ri-phone-line"></i>
+              <span>+255 787 844 040<br>+255 754 262 402</span>
+            </div>
+            <div class="footer__contact-item">
+              <i class="ri-time-line"></i>
+              <span>Mon – Fri: 8:00 – 17:00<br>Sat: 9:00 – 13:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 ASABHI Company Limited. All rights reserved.</span>
+        <span>Website by <a href="#" target="_blank">ThisUncle Technologies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/255787844040?text=Hello%20ASABHI%2C%20I%27d%20like%20to%20enquire%20about%20your%20products%20and%20services." target="_blank" class="whatsapp-float">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+  <button class="back-to-top" id="backToTop"><i class="ri-arrow-up-line"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/pages/about.js"></script>
+</body>
+</html>

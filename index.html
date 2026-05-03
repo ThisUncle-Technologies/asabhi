@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASABHI COMPANY LIMITED | Quality Supplies & Procurement Solutions</title>
+  <meta name="description" content="ASABHI Company Limited delivers premium procurement and supply solutions to businesses across Tanzania. Office supplies, industrial equipment, construction materials and more.">
+  <meta property="og:title" content="ASABHI COMPANY LIMITED">
+  <meta property="og:description" content="Your trusted supply partner in Tanzania. Premium procurement & distribution services.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Film Grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__wordmark">
+      <div class="loader__logo">ASABHI</div>
+      <div class="loader__tagline">Company Limited</div>
+    </div>
+    <div class="loader__bar">
+      <div class="loader__progress" id="loaderProgress"></div>
+    </div>
+  </div>
+
+  <!-- Nav Overlay -->
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <strong>ASABHI</strong>
+        <small>Company Limited</small>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link active">Home</a></li>
+        <li><a href="pages/about.html" class="nav__link">About</a></li>
+        <li><a href="pages/services.html" class="nav__link">Services</a></li>
+        <li><a href="pages/products.html" class="nav__link">Products</a></li>
+        <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="pages/contact.html" class="btn btn--primary">Get a Quote</a>
+      <button class="nav__burger" id="navBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="nav__mobile" id="navMobile">
+    <ul class="nav__mobile-links">
+      <li><a href="index.html" class="nav__mobile-link active">Home</a></li>
+      <li><a href="pages/about.html" class="nav__mobile-link">About</a></li>
+      <li><a href="pages/services.html" class="nav__mobile-link">Services</a></li>
+      <li><a href="pages/products.html" class="nav__mobile-link">Products</a></li>
+      <li><a href="pages/contact.html" class="nav__mobile-link">Contact</a></li>
+    </ul>
+    <div class="nav__mobile-contact">
+      <a href="tel:+255787844040"><i class="ri-phone-line"></i> +255 787 844 040</a>
+      <a href="https://wa.me/255787844040" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp Us</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" id="heroBg"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <span class="hero__tag" id="heroTag">Est. 2012 &nbsp;·&nbsp; Dar es Salaam, Tanzania</span>
+        <h1 class="hero__title" id="heroTitle">Quality Supplies.<br><em>Trusted Partnerships.</em></h1>
+        <p class="hero__desc" id="heroDesc">Premium procurement and supply solutions for businesses across Tanzania. From industrial hardware to office essentials — delivered with precision and reliability.</p>
+        <div class="hero__actions" id="heroActions">
+          <a href="pages/products.html" class="btn btn--primary">
+            <i class="ri-box-3-line"></i> Explore Products
+          </a>
+          <a href="pages/contact.html" class="btn btn--outline">
+            Partner With Us <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Services Strip -->
+    <section class="services-strip">
+      <div class="container">
+        <div class="services-strip__grid">
+          <div class="service-card fade-up">
+            <i class="ri-shopping-bag-3-line service-card__icon"></i>
+            <h4 class="service-card__title">Procurement &amp; Sourcing</h4>
+            <p class="service-card__desc">We source quality goods from verified suppliers locally and internationally, ensuring competitive pricing and timely delivery.</p>
+          </div>
+          <div class="service-card fade-up">
+            <i class="ri-truck-line service-card__icon"></i>
+            <h4 class="service-card__title">Supply &amp; Distribution</h4>
+            <p class="service-card__desc">Reliable bulk distribution across Dar es Salaam and upcountry regions. Your goods, delivered where you need them.</p>
+          </div>
+          <div class="service-card fade-up">
+            <i class="ri-links-line service-card__icon"></i>
+            <h4 class="service-card__title">Supply Chain Management</h4>
+            <p class="service-card__desc">End-to-end supply chain solutions that reduce overhead, eliminate bottlenecks, and keep your operations running smoothly.</p>
+          </div>
+          <div class="service-card fade-up">
+            <i class="ri-customer-service-2-line service-card__icon"></i>
+            <h4 class="service-card__title">Consultation &amp; Advisory</h4>
+            <p class="service-card__desc">Expert advice on procurement strategy, supplier negotiations, and cost optimisation for your business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__image-wrap fade-left">
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80"
+              alt="ASABHI team at work"
+              class="about__image"
+            >
+            <div class="about__image-badge">
+              <strong>12+</strong>
+              <span>Years of Excellence</span>
+            </div>
+          </div>
+          <div class="about__content fade-right">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="section-title">Built on Trust. <span>Driven by Quality.</span></h2>
+            <p style="margin-bottom:1rem;">Founded in 2012, ASABHI Company Limited has grown from a local trader to one of Tanzania's dependable general supply companies. We serve a diverse client base — from SMEs to large corporates and government institutions.</p>
+            <p>Our strength lies in our relationships: with trusted suppliers, with our clients, and with the people of Tanzania. Every order we fulfil is a commitment to quality and partnership.</p>
+            <div class="gold-line"></div>
+            <div class="about__stats">
+              <div class="about__stat">
+                <strong class="counter" data-target="500">0</strong>
+                <span>Products in Catalogue</span>
+              </div>
+              <div class="about__stat">
+                <strong class="counter" data-target="200">0</strong>
+                <span>Satisfied Clients</span>
+              </div>
+              <div class="about__stat">
+                <strong class="counter" data-target="12">0</strong>
+                <span>Years in Business</span>
+              </div>
+              <div class="about__stat">
+                <strong class="counter" data-target="99">0</strong>
+                <span>% On-Time Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section section--cream">
+      <div class="container">
+        <div class="products__header">
+          <div>
+            <span class="section-tag">What We Supply</span>
+            <h2 class="section-title">Our <span>Product</span> Categories</h2>
+          </div>
+          <a href="pages/products.html" class="btn btn--outline-dark">
+            View All Products <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        <div class="products__grid stagger-children">
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=800&q=80"
+              alt="Office Supplies"
+              class="product-card__img"
+            >
+            <div class="product-card__overlay"></div>
+            <div class="product-card__content">
+              <span class="product-card__tag">Category 01</span>
+              <h3 class="product-card__title">Office &amp; Stationery</h3>
+              <p class="product-card__desc">Complete office supply solutions — from paper and pens to furniture and equipment for the modern workplace.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+              alt="Industrial Equipment"
+              class="product-card__img"
+            >
+            <div class="product-card__overlay"></div>
+            <div class="product-card__content">
+              <span class="product-card__tag">Category 02</span>
+              <h3 class="product-card__title">Industrial &amp; Hardware</h3>
+              <p class="product-card__desc">Heavy-duty industrial supplies, hand tools, safety equipment and hardware for manufacturing and construction.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+              alt="IT Equipment"
+              class="product-card__img"
+            >
+            <div class="product-card__overlay"></div>
+            <div class="product-card__content">
+              <span class="product-card__tag">Category 03</span>
+              <h3 class="product-card__title">IT &amp; Electronics</h3>
+              <p class="product-card__desc">Computers, networking gear, peripherals and electronics from trusted brands — sourced and delivered for your team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-item fade-up">
+            <span class="stat-item__number">
+              <span class="counter" data-target="500">0</span><span class="stat-item__suffix">+</span>
+            </span>
+            <span class="stat-item__label">Products Available</span>
+          </div>
+          <div class="stat-item fade-up">
+            <span class="stat-item__number">
+              <span class="counter" data-target="200">0</span><span class="stat-item__suffix">+</span>
+            </span>
+            <span class="stat-item__label">Clients Served</span>
+          </div>
+          <div class="stat-item fade-up">
+            <span class="stat-item__number">
+              <span class="counter" data-target="12">0</span><span class="stat-item__suffix">+</span>
+            </span>
+            <span class="stat-item__label">Years Operating</span>
+          </div>
+          <div class="stat-item fade-up">
+            <span class="stat-item__number">
+              <span class="counter" data-target="99">0</span><span class="stat-item__suffix">%</span>
+            </span>
+            <span class="stat-item__label">Delivery Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="clients">
+      <div class="container">
+        <p class="clients__label">Trusted by leading Tanzanian organisations</p>
+        <div class="clients__logos">
+          <span class="clients__logo">TANESCO</span>
+          <span class="clients__logo">NMB Bank</span>
+          <span class="clients__logo">TTCL</span>
+          <span class="clients__logo">Proagro Global</span>
+          <span class="clients__logo">Tanzania Breweries</span>
+          <span class="clients__logo">Azania Bank</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section">
+      <div class="container">
+        <div class="testimonials__header">
+          <span class="section-tag">Client Voices</span>
+          <h2 class="section-title">What Our <span>Partners</span> Say</h2>
+          <p class="section-subtitle">We measure our success by the satisfaction of the businesses we serve across Tanzania.</p>
+        </div>
+        <div class="testimonials__grid stagger-children">
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">ASABHI has been our go-to supplier for the past four years. Their procurement team understands our needs and always delivers on time — even for urgent orders. Truly a reliable partner.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:var(--navy);">BM</div>
+              <div>
+                <div class="testimonial-card__name">Bryson Maro</div>
+                <div class="testimonial-card__role">Director, Proagro Global Limited</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">We switched our entire office supply procurement to ASABHI two years ago and the difference was immediate. Better prices, faster delivery, and a team that actually picks up the phone.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" style="background:var(--navy-3);">AK</div>
+              <div>
+                <div class="testimonial-card__name">Amina Khatib</div>
+                <div class="testimonial-card__role">Operations Manager, TKL Industries</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container cta-banner__content">
+        <span class="cta-banner__tag">Ready to Get Started?</span>
+        <h2 class="cta-banner__title">Let's Build a Supply Partnership That Works</h2>
+        <p class="cta-banner__desc">Talk to our team today. We'll assess your needs and propose the right supply solution for your business.</p>
+        <div class="cta-banner__actions">
+          <a href="pages/contact.html" class="btn btn--primary">
+            <i class="ri-mail-send-line"></i> Request a Quote
+          </a>
+          <a href="https://wa.me/255787844040?text=Hello%20ASABHI%2C%20I%27d%20like%20to%20discuss%20a%20supply%20partnership." target="_blank" class="btn btn--outline">
+            <i class="ri-whatsapp-line"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <strong>ASABHI</strong>
+          <small>Company Limited</small>
+          <p>Your trusted partner for quality supplies and procurement solutions across Tanzania — since 2012.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social"><i class="ri-linkedin-box-line"></i></a>
+            <a href="#" class="footer__social"><i class="ri-facebook-line"></i></a>
+            <a href="https://wa.me/255787844040" class="footer__social" target="_blank"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h5>Quick Links</h5>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="pages/about.html" class="footer__link">About Us</a></li>
+            <li><a href="pages/services.html" class="footer__link">Services</a></li>
+            <li><a href="pages/products.html" class="footer__link">Products</a></li>
+            <li><a href="pages/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Services</h5>
+          <ul class="footer__links">
+            <li><a href="pages/services.html" class="footer__link">Procurement</a></li>
+            <li><a href="pages/services.html" class="footer__link">Distribution</a></li>
+            <li><a href="pages/services.html" class="footer__link">Supply Chain</a></li>
+            <li><a href="pages/services.html" class="footer__link">Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Contact Us</h5>
+          <div class="footer__contact">
+            <div class="footer__contact-item">
+              <i class="ri-map-pin-2-line"></i>
+              <span>Dar es Salaam, Tanzania</span>
+            </div>
+            <div class="footer__contact-item">
+              <i class="ri-phone-line"></i>
+              <span>+255 787 844 040<br>+255 754 262 402</span>
+            </div>
+            <div class="footer__contact-item">
+              <i class="ri-time-line"></i>
+              <span>Mon – Fri: 8:00 – 17:00<br>Sat: 9:00 – 13:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 ASABHI Company Limited. All rights reserved.</span>
+        <span>Website by <a href="#" target="_blank">ThisUncle Technologies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/255787844040?text=Hello%20ASABHI%2C%20I%27d%20like%20to%20enquire%20about%20your%20products%20and%20services." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
