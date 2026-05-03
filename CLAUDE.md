@@ -1,4 +1,4 @@
-# ASABHI COMPANY LIMITED — tut-exhibit-1
+# ASABHI COMPANY LIMITED — tut-exhibit-01
 
 ## Client
 - **Company:** ASABHI Company Limited
@@ -22,7 +22,7 @@
 
 ## File Structure
 ```
-tut-exhibit-1/
+tut-exhibit-01/
 ├── index.html              Home page
 ├── pages/
 │   ├── about.html          Story, Mission/Vision, Team
