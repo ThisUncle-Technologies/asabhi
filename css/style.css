@@ -1028,7 +1028,7 @@ p  { line-height: 1.75; color: var(--text-body); }
 .back-to-top {
   position: fixed;
   bottom: 5.5rem;
-  right: 2rem;
+  right: calc(2rem + 6px);
   width: 42px;
   height: 42px;
   background: var(--navy);
