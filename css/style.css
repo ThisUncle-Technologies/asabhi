@@ -780,6 +780,14 @@ p  { line-height: 1.75; color: var(--text-body); }
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+.testimonial-card__source {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 1.4rem;
+}
 
 /* ── CLIENTS SECTION ────────────────────────────── */
 .clients { padding: 4rem 0; border-top: 1px solid var(--cream-2); border-bottom: 1px solid var(--cream-2); }
