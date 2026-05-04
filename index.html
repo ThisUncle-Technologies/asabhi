@@ -53,7 +53,7 @@
         <li><a href="pages/products.html" class="nav__link">Products</a></li>
         <li><a href="pages/contact.html" class="nav__link">Contact</a></li>
       </ul>
-      <a href="pages/contact.html" class="btn btn--primary">Get a Quote</a>
+      <a href="pages/contact.html" class="btn btn--primary" id="navCta">Get a Quote</a>
       <button class="nav__burger" id="navBurger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
@@ -139,15 +139,15 @@
               class="about__image"
             >
             <div class="about__image-badge">
-              <strong>12+</strong>
-              <span>Years of Excellence</span>
+              <strong id="aboutBadgeValue">12+</strong>
+              <span id="aboutBadgeLabel">Years of Excellence</span>
             </div>
           </div>
           <div class="about__content fade-right">
-            <span class="section-tag">Who We Are</span>
-            <h2 class="section-title">Built on Trust. <span>Driven by Quality.</span></h2>
-            <p style="margin-bottom:1rem;">Founded in 2012, ASABHI Company Limited has grown from a local trader to one of Tanzania's dependable general supply companies. We serve a diverse client base — from SMEs to large corporates and government institutions.</p>
-            <p>Our strength lies in our relationships: with trusted suppliers, with our clients, and with the people of Tanzania. Every order we fulfil is a commitment to quality and partnership.</p>
+            <span class="section-tag" id="aboutTag">Who We Are</span>
+            <h2 class="section-title" id="aboutHeading">Built on Trust. <span>Driven by Quality.</span></h2>
+            <p id="aboutPara0" style="margin-bottom:1rem;">Founded in 2012, ASABHI Company Limited has grown from a local trader to one of Tanzania's dependable general supply companies. We serve a diverse client base — from SMEs to large corporates and government institutions.</p>
+            <p id="aboutPara1">Our strength lies in our relationships: with trusted suppliers, with our clients, and with the people of Tanzania. Every order we fulfil is a commitment to quality and partnership.</p>
             <div class="gold-line"></div>
             <div class="about__stats">
               <div class="about__stat">
@@ -336,7 +336,7 @@
         <div class="footer__brand">
           <strong>ASABHI</strong>
           <small>Company Limited</small>
-          <p>Your trusted partner for quality supplies and procurement solutions across Tanzania — since 2012.</p>
+          <p id="footerDesc">Your trusted partner for quality supplies and procurement solutions across Tanzania — since 2012.</p>
           <div class="footer__socials">
             <a href="#" class="footer__social"><i class="ri-instagram-line"></i></a>
             <a href="#" class="footer__social"><i class="ri-linkedin-box-line"></i></a>
@@ -403,5 +403,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/content-loader.js"></script>
 </body>
 </html>
