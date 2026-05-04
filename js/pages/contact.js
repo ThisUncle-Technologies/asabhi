@@ -1,9 +1,16 @@
 /* ── CONTACT PAGE ───────────────────────── */
 gsap.registerPlugin(ScrollTrigger);
 
-// EmailJS — replace with real credentials when client onboards
-// emailjs.init('YOUR_PUBLIC_KEY');
+// ── EmailJS credentials ───────────────────
+// Once the client sets up EmailJS, paste the three values below.
+// Leave them empty to use the WhatsApp fallback instead.
+const EMAILJS_PUBLIC_KEY  = '';  // e.g. 'user_xxxxxxxxxxxx'
+const EMAILJS_SERVICE_ID  = '';  // e.g. 'service_xxxxxxx'
+const EMAILJS_TEMPLATE_ID = '';  // e.g. 'template_xxxxxxx'
 
+if (EMAILJS_PUBLIC_KEY) emailjs.init(EMAILJS_PUBLIC_KEY);
+
+// ── Form elements ─────────────────────────
 const form      = document.getElementById('contactForm');
 const btnText   = document.getElementById('btnText');
 const btnLoad   = document.getElementById('btnLoading');
@@ -14,22 +21,44 @@ const submitBtn = document.getElementById('submitBtn');
 if (form) {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
+    if (!form.checkValidity()) { form.reportValidity(); return; }
 
     btnText.style.display = 'none';
     btnLoad.style.display = 'flex';
     submitBtn.disabled = true;
 
     try {
-      /* Uncomment and configure when EmailJS is set up:
-      await emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', form);
-      */
-      await new Promise(r => setTimeout(r, 1200)); // demo delay
-      formOk.style.display = 'flex';
-      form.reset();
+      if (EMAILJS_PUBLIC_KEY && EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID) {
+        // EmailJS send when credentials are configured
+        await emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form);
+        formOk.style.display = 'flex';
+        form.reset();
+      } else {
+        // WhatsApp fallback — composes a message from the form fields
+        const fname   = document.getElementById('fname').value.trim();
+        const lname   = document.getElementById('lname').value.trim();
+        const company = document.getElementById('company').value.trim();
+        const email   = document.getElementById('email').value.trim();
+        const phone   = document.getElementById('phone').value.trim();
+        const service = document.getElementById('service').value;
+        const message = document.getElementById('message').value.trim();
+
+        const text = [
+          `Hello ASABHI, I'd like to get in touch.`,
+          ``,
+          `Name: ${fname} ${lname}`,
+          company ? `Company: ${company}` : '',
+          `Email: ${email}`,
+          phone ? `Phone: ${phone}` : '',
+          service ? `Service: ${service}` : '',
+          ``,
+          `Message: ${message}`
+        ].filter(Boolean).join('\n');
+
+        window.open(`https://wa.me/255787844040?text=${encodeURIComponent(text)}`, '_blank');
+        formOk.style.display = 'flex';
+        form.reset();
+      }
     } catch {
       formErr.style.display = 'flex';
     } finally {
@@ -40,7 +69,7 @@ if (form) {
   });
 }
 
-// Animations
+// ── Animations ────────────────────────────
 function initContactAnimations() {
   gsap.to('.fade-left', {
     scrollTrigger: { trigger: '.contact-main', start: 'top 75%' },

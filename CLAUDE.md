@@ -5,7 +5,7 @@
 - **MD:** Ibrahim Matayi
 - **Phone 1:** +255 787 844 040 (also WhatsApp)
 - **Phone 2:** +255 754 262 402
-- **Status:** Proposal Accepted — spec demo for cold pitch
+- **Status:** Website Complete — awaiting client assets & EmailJS credentials
 - **Location:** Dar es Salaam, Tanzania
 
 ## Brand Tokens
@@ -55,10 +55,19 @@ tut-exhibit-01/
 ## Known TODOs
 - [ ] Replace Unsplash images with real client photos after sale
 - [ ] Add real logo (currently text-based)
-- [ ] Configure EmailJS: set `SERVICE_ID`, `TEMPLATE_ID`, `PUBLIC_KEY` in contact.js
-- [ ] Update footer year to current year
-- [ ] Add Google Maps embed on contact page (map link TBD from client)
-- [ ] Add real client/partner logos to clients strip on home page
+- [ ] Configure EmailJS: set `EMAILJS_PUBLIC_KEY`, `EMAILJS_SERVICE_ID`, `EMAILJS_TEMPLATE_ID` at top of `js/pages/contact.js` — form currently falls back to WhatsApp automatically
+- [ ] Add real client/partner logos to clients strip on home page (index.html `.clients__logos`)
+- [ ] Update Google Maps embed in contact.html once client confirms exact office address
+- [ ] Add real social media links to all footer `href="#"` anchors
+
+## Completed
+- [x] All 5 pages built (index, about, services, products, contact)
+- [x] Full CSS — global + per-page, responsive down to 375px
+- [x] All animations (GSAP, Lenis smooth scroll, ScrollTrigger, counters)
+- [x] Contact form with WhatsApp fallback (functional without EmailJS)
+- [x] Google Maps placeholder (Dar es Salaam) on contact page
+- [x] Footer copyright year updated to 2026
+- [x] content-loader.js wired for web dashboard integration
 
 ## CDN Dependencies
 - GSAP 3.12.5 + ScrollTrigger — animations
